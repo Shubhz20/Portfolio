@@ -481,7 +481,7 @@ const App = () => {
               style={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr', gap: '2rem', alignItems: 'center' }}
             >
               {/* Left side - Brief Info */}
-              <div style={{ textAlign: 'right' }} className="hidden md:block">
+              <div style={{ textAlign: 'right' }} className="desktop-only">
                 <div className="glass-morphism" style={{ padding: '1.5rem', display: 'inline-block', maxWidth: '350px', textAlign: 'left' }}>
                   <h4 style={{ fontWeight: 'bold', fontSize: '1.25rem', color: '#00f2ff', marginBottom: '0.5rem' }}>{exp.role}</h4>
                   <p style={{ color: '#9ca3af', fontSize: '0.875rem', marginBottom: '0.25rem' }}>{exp.org}</p>
@@ -506,7 +506,7 @@ const App = () => {
               </div>
 
               {/* Right side - Detailed Learnings */}
-              <div style={{ textAlign: 'left' }} className="hidden md:block">
+              <div style={{ textAlign: 'left' }} className="desktop-only">
                 <div className="glass-morphism" style={{ padding: '1.5rem', display: 'inline-block', maxWidth: '450px' }}>
                   <h5 style={{ fontSize: '0.875rem', fontWeight: '700', color: '#00f2ff', marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                     What I Learned
@@ -523,7 +523,7 @@ const App = () => {
               </div>
 
               {/* Mobile view - Combined */}
-              <div style={{ gridColumn: '1 / -1', display: 'block' }} className="md:hidden">
+              <div style={{ gridColumn: '1 / -1' }} className="mobile-only">
                 <div className="glass-morphism" style={{ padding: '1.5rem' }}>
                   <div style={{ display: 'flex', gap: '1rem', marginBottom: '1rem' }}>
                     <div style={{ 
