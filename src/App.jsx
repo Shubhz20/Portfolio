@@ -22,7 +22,7 @@ import ragCover from './assets/rag_project_cover_1767981135662.png';
 import gestureCover from './assets/gesture_project_cover_1767981169463.png';
 import tekknectCover from './assets/tekknect_project_cover_1767981152696.png';
 import heroBg from './assets/portfolio_hero_section_1767980742565.png';
-import aitCover from './assets/ait_project_cover_1767981184013.png';
+import aitCover from './assets/ait.jpg';
 import tictactoeCover from './assets/tictactoe_project_cover_1767981217405.png';
 import profilePic from './assets/harshit_profile.jpg';
 import afterhoursLogo from './assets/afterhours_logo.jpg';
@@ -108,8 +108,8 @@ const App = () => {
             ))}
           </div>
           <div className="flex gap-4" style={{ display: 'flex', gap: '1rem' }}>
-            <a href="https://github.com" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }} className="hover:text-cyan-400"><Github size={18} /></a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }} className="hover:text-purple-400"><Linkedin size={18} /></a>
+            <a href="https://github.com/Shubhz20" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }} className="hover:text-cyan-400"><Github size={18} /></a>
+            <a href="https://www.linkedin.com/in/harshitagrawal-/" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }} className="hover:text-purple-400"><Linkedin size={18} /></a>
             <a href="mailto:harshit.agrawal@adypu.edu.in" style={{ color: 'inherit', textDecoration: 'none' }} className="hover:text-white"><Mail size={18} /></a>
           </div>
         </div>
@@ -257,7 +257,7 @@ const App = () => {
                   alt="Harshit Agrawal" 
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%' }} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 50%' }} 
                 />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 50%, rgba(10,10,12,0.7))' }} />
               </div>
@@ -276,7 +276,7 @@ const App = () => {
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
                   <Cpu size={16} style={{ color: '#22d3ee', marginBottom: '0.25rem' }} />
-                  <span style={{ fontSize: '0.65rem', fontWeight: 'bold' }}>AI Native</span>
+                  <span style={{ fontSize: '0.65rem', fontWeight: 'bold' }}>Full Stack Developer & AI Enthusiast</span>
                 </div>
               </div>
             </motion.div>
@@ -325,42 +325,61 @@ const App = () => {
         <SectionHeader title="Featured Projects" subtitle="A showcase of AI, web, and experimentations." />
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
           {[
-            {
-              title: "RAG System for Books",
-              img: ragCover,
-              desc: "Context-aware summarization and querying using Google Gemini and LangChain.",
-              date: "Dec 2025",
-              tech: ["Gemini", "LangChain", "VectorDB"]
-            },
-            {
-              title: "Hand Gesture Volume Control",
-              img: gestureCover,
-              desc: "Real-time gesture recognition using MediaPipe to control system volume on macOS.",
-              date: "Dec 2025",
-              tech: ["Python", "MediaPipe", "OpenCV"]
-            },
-            {
-              title: "Tek'knect",
-              img: tekknectCover,
-              desc: "Full-stack platform for industry mentorship with Google OAuth integration.",
-              date: "Oct 2025",
-              tech: ["React", "Express", "MongoDB", "OAuth"]
-            },
-            {
-              title: "AI & ML Experiments",
-              img: aitCover,
-              desc: "A collection of machine learning experiments and AI tool implementations.",
-              date: "2024-2025",
-              tech: ["Scikit-learn", "TensorFlow", "Pandas"]
-            },
-            {
-              title: "Tic-Tac-Toe AI",
-              img: tictactoeCover,
-              desc: "Classic game with an unbeatable Minimax algorithm implementation.",
-              date: "2024",
-              tech: ["React", "Algorithms", "Logic"]
-            }
-          ].map((proj) => (
+          {
+            title: "RAG System for Books",
+            img: ragCover,
+            desc: "Context-aware summarization and querying using Google Gemini and LangChain.",
+            date: "Dec 2025",
+            tech: ["Gemini", "LangChain", "VectorDB"],
+            github: "https://github.com/Shubhz20/RAG_BookInsights",
+            demo: "https://ragbookinsights-agmyyng7whgbvrbs9qh25z.streamlit.app/"
+          },
+          {
+            title: "Hand Gesture Volume Control",
+            img: gestureCover,
+            desc: "Real-time gesture recognition using MediaPipe to control system volume on macOS.",
+            date: "Dec 2025",
+            tech: ["Python", "MediaPipe", "OpenCV"],
+            github: "https://github.com/Shubhz20/Hand-Gesture-Volume-Control",
+            demo: "https://appapppy-7y6e5uvlwrwjzxmnx8c3gq.streamlit.app/"
+          },
+          {
+            title: "Tek'knect",
+            img: tekknectCover,
+            desc: "Full-stack platform for industry mentorship with Google OAuth integration.",
+            date: "Oct 2025",
+            tech: ["React", "Express", "MongoDB", "OAuth"],
+            github: "https://github.com/Shubhz20/Tek-knect-",
+            demo: "https://tek-knect.vercel.app/"
+          },
+          {
+            title: "Tic-Tac-Toe AI",
+            img: tictactoeCover,
+            desc: "Classic game with an unbeatable Minimax algorithm implementation.",
+            date: "2024",
+            tech: ["React", "Algorithms", "Logic"],
+            github: "https://github.com/Shubhz20/Tic-tac-toe-wap",
+            demo: "https://tictactoe-wapgame.netlify.app/"
+          },
+          {
+            title: "AfterHours Event Management",
+            img: afterhoursLogo,
+            desc: "Event management platform for parties and other events.",
+            date: "2025",
+            tech: ["React", "Vite", "Node.js"],
+            github: null,
+            demo: "https://afterhours-itwasalladream.vercel.app/"
+          },
+          {
+            title: "AIESEC In Tanta Onboarding Portal",
+            img: aitCover,
+            desc: "Onboarding portal for AIESEC members in Tanta.",
+            date: "2025",
+            tech: ["React", "Firebase"],
+            github: "https://github.com/Shubhz20/aiesec-in-tanta",
+            demo: "https://aiesecintanta.netlify.app/"
+          }
+        ].map((proj) => (
             <motion.div
               key={proj.title}
               whileHover={{ y: -10 }}
@@ -383,8 +402,16 @@ const App = () => {
                   ))}
                 </div>
                 <div style={{ display: 'flex', gap: '1rem', marginTop: 'auto' }}>
-                   <a href="https://github.com" target="_blank" rel="noreferrer" style={{ fontSize: '0.75rem', color: 'inherit', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.25rem' }} className="hover:text-cyan-400"><Github size={14}/> Github</a>
-                   <a href="#" style={{ fontSize: '0.75rem', color: 'inherit', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.25rem' }} className="hover:text-cyan-400"><ExternalLink size={14}/> Demo</a>
+                   {proj.github && (
+                     <a href={proj.github} target="_blank" rel="noreferrer" style={{ fontSize: '0.75rem', color: 'inherit', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.25rem' }} className="hover:text-cyan-400">
+                       <Github size={14}/> Code
+                     </a>
+                   )}
+                   {proj.demo && (
+                     <a href={proj.demo} target="_blank" rel="noreferrer" style={{ fontSize: '0.75rem', color: 'inherit', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.25rem' }} className="hover:text-cyan-400">
+                       <ExternalLink size={14}/> Demo
+                     </a>
+                   )}
                 </div>
               </div>
             </motion.div>
@@ -405,14 +432,13 @@ const App = () => {
                 "Team Leadership & Management of 22+ members",
                 "CRM Systems & Lead Tracking",
                 "Corporate Sponsorship Strategy",
-                "Cross-functional Communication",
-                "Event Planning & Execution"
+                "Cross-functional Communication"
               ]
             },
             {
               role: "Business Development Manager",
-              org: "Tek'knect",
-              date: "Aug 2025 - Present",
+              org: "AIESEC in Pune",
+              date: "Jan - Aug 2025",
               learnings: [
                 "Business Scaling Strategies",
                 "Partnership Development & Networking",
@@ -422,7 +448,7 @@ const App = () => {
               ]
             },
             {
-              role: "Web Development Intern",
+              role: "Frontend Development Intern",
               org: "Safrni Egypt",
               date: "June - Aug 2025",
               learnings: [
@@ -430,7 +456,7 @@ const App = () => {
                 "Design Thinking Process",
                 "Mobile-First Development",
                 "Tourism Industry UX Patterns",
-                "Cross-cultural Team Collaboration"
+                "Cross-cultural Collaboration"
               ]
             },
             {
@@ -633,8 +659,8 @@ const App = () => {
         <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '2rem' }}>Let's Build Something <span className="gradient-text">Great</span></h2>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', marginBottom: '3rem' }}>
            <motion.a whileHover={{ scale: 1.2 }} href="mailto:harshit.agrawal@adypu.edu.in" style={{ padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '9999px', color: 'white', display: 'flex', alignItems: 'center' }}><Mail /></motion.a>
-           <motion.a whileHover={{ scale: 1.2 }} href="https://linkedin.com" target="_blank" rel="noreferrer" style={{ padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '9999px', color: 'white', display: 'flex', alignItems: 'center' }}><Linkedin /></motion.a>
-           <motion.a whileHover={{ scale: 1.2 }} href="https://github.com" target="_blank" rel="noreferrer" style={{ padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '9999px', color: 'white', display: 'flex', alignItems: 'center' }}><Github /></motion.a>
+           <motion.a whileHover={{ scale: 1.2 }} href="https://www.linkedin.com/in/harshitagrawal-/" target="_blank" rel="noreferrer" style={{ padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '9999px', color: 'white', display: 'flex', alignItems: 'center' }}><Linkedin /></motion.a>
+           <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/Shubhz20" target="_blank" rel="noreferrer" style={{ padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '9999px', color: 'white', display: 'flex', alignItems: 'center' }}><Github /></motion.a>
         </div>
         <p style={{ color: '#6b7280', fontSize: '0.875rem', marginBottom: '1rem' }}>Designed & Built by Harshit Agrawal © 2026</p>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', fontSize: '0.75rem', fontFamily: 'monospace', color: '#4b5563' }}>
